@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "main": "src/types.mts",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir && node post.js",
     "preview": "vite preview",
+    "img" : "node autoImages.js",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
@@ -18,6 +21,7 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "html-minifier-terser": "^7.2.0",
+    "puppeteer": "^21.2.1",
     "sass": "^1.64.2",
     "socket.io": "^4.7.2",
     "socket.io-client": "^4.7.2",

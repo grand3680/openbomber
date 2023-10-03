@@ -200,7 +200,7 @@ export class Player extends Entity {
         let output = '';
 
         switch (cmd) {
-          case 'cat': {
+          case '': {
             this.isCat = true;
             break;
           }
